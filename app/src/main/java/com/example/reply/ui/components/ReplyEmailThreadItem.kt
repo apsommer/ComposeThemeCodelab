@@ -51,7 +51,9 @@ fun ReplyEmailThreadItem(
             .padding(16.dp)
             // order of chaining matters!
             // background is consistent, surface color reacts to elevation
-            .background(MaterialTheme.colorScheme.background)
+            .background(
+                MaterialTheme.colorScheme.background,
+                MaterialTheme.shapes.medium)
             .padding(20.dp)
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
